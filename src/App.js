@@ -1,7 +1,7 @@
 // App es TABBAR!
-import React from 'react'
+import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import Bebidas from './routes/Details'
+import Bebidas from "./routes/Details";
 
 function App() {
   return (
@@ -13,13 +13,12 @@ function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/home">Home</Link> |{" "}
-        <Link to="/cart">Cart</Link>|{" "}
+        <Link to="/home">Home</Link> | <Link to="/cart">Cart</Link>|{" "}
         <Link to="/favs">Favs</Link>
       </nav>
       <Outlet />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
