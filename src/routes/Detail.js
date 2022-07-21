@@ -9,7 +9,7 @@ export default function Detail() {
     <main style={{ padding: "1rem" }}>
       <h2>Producto: {params.name}</h2>
       <p>
-        {bebida.name}: {bebida.price}
+        {bebida.name}: {bebida.price}€
       </p>
     </main>
   );

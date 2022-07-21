@@ -1,7 +1,7 @@
 // App es TABBAR!
+import "./App.css";
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import Bebidas from "./routes/Details";
+import { NavLink, Outlet } from "react-router-dom";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
           paddingBottom: "1rem",
         }}
       >
-        <Link to="/home">Home</Link> | <Link to="/cart">Cart</Link>|{" "}
-        <Link to="/favs">Favs</Link>
+        <NavLink to="/home">Home</NavLink> | <NavLink to="/cart">Cart</NavLink>|{" "}
+        <NavLink to="/favs">Favs</NavLink>
       </nav>
       <Outlet />
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { getBebidas } from "../bebidas";
 
 function Home() {
@@ -14,13 +14,13 @@ function Home() {
         }}
       >
         {bebidas.map((bebida) => (
-          <Link
+          <NavLink
             style={{ display: "block", margin: "1rem 0" }}
             to={`/home/${bebida.id}`}
             key={bebida.id}
           >
             {bebida.name}
-          </Link>
+          </NavLink>
         ))}
       </nav>
       <Outlet />
