@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/Home.css";
 
 import { NavLink, Outlet } from "react-router-dom";
 import { getBebidas } from "../bebidas";
@@ -16,7 +17,7 @@ function Home() {
         {bebidas.map((bebida) => (
           <NavLink
             style={{ display: "block", margin: "1rem 0" }}
-            to={`/home/${bebida.id}`}
+            to={`/${bebida.id}`}
             key={bebida.id}
           >
             {bebida.name}

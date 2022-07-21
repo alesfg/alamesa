@@ -1,0 +1,9 @@
+
+.tabbar{
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
