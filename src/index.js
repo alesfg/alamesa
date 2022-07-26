@@ -32,7 +32,7 @@ root.render(
         <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
+            <main>
               <p>Ruta equivocada</p>
               <p>No hay nada aqui!</p>
             </main>
