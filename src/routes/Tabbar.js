@@ -4,13 +4,7 @@ import "./styles/Tabbar.css";
 
 function Tabbar() {
     return (
-        <nav
-            className="tabbar"
-            style={{
-                borderBottom: "solid 1px",
-                paddingBottom: "1rem",
-            }}
-        >
+        <nav className="tabbar">
             <NavLink to="/">Home</NavLink> | <NavLink to="/cart">Cart</NavLink>|{" "}
             <NavLink to="/favs">Favs</NavLink>
         </nav>)
