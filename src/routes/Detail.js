@@ -1,4 +1,6 @@
 //invoice
+import "./styles/Detail.css";
+
 import { useParams } from "react-router-dom";
 import { getBebida } from "../bebidas";
 

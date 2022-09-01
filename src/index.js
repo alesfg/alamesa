@@ -25,14 +25,14 @@ root.render(
             <Route path=":id" element={<Detail />} />
           </Route>
           */}
-        <Route path="home" element={<Home />} />
-        <Route path="/home/:id" element={<Detail />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<Detail />} />
         <Route path="cart" element={<Cart />} />
         <Route path="favs" element={<Favs />} />
         <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
+            <main>
               <p>Ruta equivocada</p>
               <p>No hay nada aqui!</p>
             </main>

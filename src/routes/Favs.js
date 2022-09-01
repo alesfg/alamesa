@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import "./styles/Favs.css";
+import TopSection from "../components/TopSection/TopSection";
 
 function Favs() {
   return (
-    <div>Favs</div>
-  )
+    <div>
+      <TopSection title="Favorite dishes" />
+    </div>
+  );
 }
 
-export default Favs
+export default Favs;

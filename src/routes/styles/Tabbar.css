@@ -1,0 +1,13 @@
+.tabbar {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  max-height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  border-top: solid 1px black;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}

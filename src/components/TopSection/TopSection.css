@@ -1,0 +1,14 @@
+.topsection {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 425px) {
+  .topsection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+}
