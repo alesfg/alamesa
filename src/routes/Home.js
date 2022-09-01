@@ -22,6 +22,7 @@ function Home() {
               // style={{ margin: "1rem 0" }}
               to={`/${bebida.id}`}
               key={bebida.id}
+              style={{ color: "white" }}
             >
               {bebida.name}
             </NavLink>
