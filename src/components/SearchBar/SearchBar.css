@@ -1,0 +1,16 @@
+.searchbar {
+  width: 90%;
+  border-color: rgba(241, 236, 236, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+/* @media screen and (max-width: 425px) {
+  .searchbar {
+    display: flex;
+    justify-content: center;
+     width: 80%;
+  }
+} */

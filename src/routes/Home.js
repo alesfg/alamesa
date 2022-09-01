@@ -3,13 +3,13 @@ import "./styles/Home.css";
 
 import { NavLink, Outlet } from "react-router-dom";
 import { getBebidas } from "../bebidas";
-import TopSection from "../components/TopSection";
+import TopSection from "../components/TopSection/TopSection";
 
 function Home() {
   let bebidas = getBebidas();
   return (
     <>
-      <TopSection title='Home' />
+      <TopSection title="Menú" />
       <div className="home">
         <nav
           style={{
