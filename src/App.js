@@ -2,8 +2,7 @@
 import "./App.css";
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Tabbar from "./routes/Tabbar";
-
+import Tabbar from "./Pages/Tabbar";
 
 function App() {
   return (

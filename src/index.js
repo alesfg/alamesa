@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 import App from "./App";
-import Detail from "./routes/Detail";
-import Cart from "./routes/Cart";
-import Favs from "./routes/Favs";
-import Home from "./routes/Home";
+import Detail from "./Pages/Detail";
+import Cart from "./Pages/Cart";
+import Favs from "./Pages/Favs";
+import Home from "./Pages/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
