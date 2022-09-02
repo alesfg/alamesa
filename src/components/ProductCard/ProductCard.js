@@ -1,10 +1,18 @@
 import React from "react";
 import "./ProductCard.css";
 
-function ProductCard() {
+function ProductCard({ name, price, img }) {
+
+  console.log("Hey")
+  console.log(typeof (img))
+
   return (
-    <div className="container">
-      <input type="search" placeholder="Buscar" className="productcard" />
+    <div className="card">
+      <img src={img} alt={name} className='img' />
+      <div className="footer">
+        <div>{name}</div>
+        <div>{price}</div>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import "./styles/Home.css";
 import { NavLink, Outlet } from "react-router-dom";
 import { getBebidas } from "../bebidas";
 import TopSection from "../components/TopSection/TopSection";
+import ProductCard from "../components/ProductCard/ProductCard";
 
 function Home() {
   let bebidas = getBebidas();
@@ -11,23 +12,18 @@ function Home() {
     <>
       <TopSection title="Menú" />
       <div className="home">
-        <nav
-          style={{
-            borderRight: "solid 1px",
-            // padding: "1rem",
-          }}
-        >
           {bebidas.map((bebida) => (
-            <NavLink
-              // style={{ margin: "1rem 0" }}
-              to={`/${bebida.id}`}
-              key={bebida.id}
-              style={{ color: "white" }}
-            >
-              {bebida.name}
-            </NavLink>
+            <div className='card'>
+              <NavLink
+                // style={{ margin: "1rem 0" }}
+                to={`/${bebida.id}`}
+                key={bebida.id}
+                style={{ color: "white" }}
+                >
+                <ProductCard name={bebida.name} price={bebida.price} img={bebida.img} />
+              </NavLink>
+            </div>
           ))}
-        </nav>
         <Outlet />
       </div>
     </>
